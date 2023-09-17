@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D54783C2AB763D700CCA990 /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = 1D54783B2AB763D700CCA990 /* glad.c */; };
 		1DCDCC392AB60FB40037C93D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DCDCC382AB60FB40037C93D /* main.cpp */; };
 		1DCDCC412AB60FD20037C93D /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DCDCC402AB60FD20037C93D /* GLUT.framework */; };
 		1DCDCC432AB60FE00037C93D /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DCDCC422AB60FE00037C93D /* OpenGL.framework */; };
@@ -39,6 +40,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1D54783B2AB763D700CCA990 /* glad.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = glad.c; path = ../../../Downloads/glad/src/glad.c; sourceTree = "<group>"; };
 		1DCDCC352AB60FB40037C93D /* base_pro */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = base_pro; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DCDCC382AB60FB40037C93D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		1DCDCC402AB60FD20037C93D /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
@@ -86,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				1DCDCC382AB60FB40037C93D /* main.cpp */,
+				1D54783B2AB763D700CCA990 /* glad.c */,
 			);
 			path = base_pro;
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DCDCC392AB60FB40037C93D /* main.cpp in Sources */,
+				1D54783C2AB763D700CCA990 /* glad.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +295,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8834V5NS5J;
 				ENABLE_HARDENED_RUNTIME = YES;
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/OpenGL/glfw";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/OpenGL/glfw",
+					"$(SRCROOT)/glad",
+					"$(SRCROOT)/KHR",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/OpenGL",
@@ -307,7 +315,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8834V5NS5J;
 				ENABLE_HARDENED_RUNTIME = YES;
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/OpenGL/glfw";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/OpenGL/glfw",
+					"$(SRCROOT)/glad",
+					"$(SRCROOT)/KHR",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/OpenGL",
