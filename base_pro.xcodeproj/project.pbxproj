@@ -118,10 +118,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1DCDCC3C2AB60FB40037C93D /* Build configuration list for PBXNativeTarget "base_pro" */;
 			buildPhases = (
-				1DCDCC312AB60FB40037C93D /* Sources */,
 				1DCDCC322AB60FB40037C93D /* Frameworks */,
 				1DCDCC332AB60FB40037C93D /* CopyFiles */,
 				1DCDCC5F2AB614E00037C93D /* Embed Libraries */,
+				1DCDCC312AB60FB40037C93D /* Sources */,
 			);
 			buildRules = (
 			);
@@ -296,6 +296,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/OpenGL",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -311,6 +312,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/OpenGL",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
